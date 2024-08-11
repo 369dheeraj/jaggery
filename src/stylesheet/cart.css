@@ -1,0 +1,24 @@
+.cart-container {
+    position: relative;
+  }
+  
+  .cart-icon {
+    font-size: 24px; /* Adjust as needed */
+    color: #333; /* Adjust as needed */
+  }
+  
+  .cart-value {
+    position: absolute;
+    top: -20px; /* Adjust position as needed */
+    right: -15px; /* Adjust position as needed */
+    background-color: black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  

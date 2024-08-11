@@ -1,0 +1,88 @@
+
+body {
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-container > div {
+  margin: 1px;
+  padding: 0.25em;
+  font-size: 1em;
+}
+
+.flex-container1 {
+  display: flex;
+  height: 6em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container2 {
+  display: flex;
+  height: 6em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container3 {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid grey;
+  padding-top: 0;
+  justify-content: space-between;
+}
+
+.flex-container3 > div {
+  /* Adjust width and height for desired product size */
+  width: 200px; /* Example value */
+  height: 250px; /* Example value */
+  border: 1px solid grey; /* Uncomment for visual debugging */
+  margin: 0.5em;
+  padding-top: 0;
+}
+
+.flex-container3 div > div:first-child {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.flex-container3 div img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.flex-container3 div > div:nth-child(2) {
+  text-align: center;
+  border: 1px solid gray; /* Uncomment for visual debugging */
+}
+
+.icon {
+  display: flex;
+}
+
+.icon > div {
+  margin: 0.5em;
+  text-align: center;
+  font-size: 20px;
+}
+
+.logo > img {
+  height: 5em;
+  width: 5em;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu > div {
+  margin: 0.5em;
+  text-align: center;
+  font-size: 20px;
+}
+

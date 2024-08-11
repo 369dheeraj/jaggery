@@ -1,0 +1,59 @@
+/* ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul>li{
+    display: inline;
+    padding: 0.5em;
+    font-size: 1rem;;
+}
+
+li:hover{
+    background-color: black;
+    color: beige;
+    font-weight: bolder;
+} */
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.menu > li {
+    display: inline-block;
+    padding: 0.5em;
+    font-size: 1rem;
+    position: relative; /* Needed for absolute positioning of submenu */
+  }
+  
+  ul.submenu {
+    display: block;
+    position: absolute;
+    top: 100%; /* Position dropdown below the menu item */
+    left: 0;
+    background-color: white;
+    padding: 0.5em 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1; /* Ensure dropdowns appear above other content */
+  }
+  
+  ul.submenu > li {
+    display: block;
+    padding: 0.3em 1em;
+    font-size: 0.9rem;
+  }
+  
+  li:hover {
+    background-color: black;
+    color: beige;
+    font-weight: bolder;
+  }
+  
+  li:hover .submenu {
+    display: block; /* Show submenu on hover */
+  }
+  
